@@ -1,1 +1,0 @@
-body{font-family:Arial,Helvetica,sans-serif}.cell{width:90px;height:90px;background-color:#f8e5e5;border:2px solid red;display:flex;justify-content:center;align-items:center;font-size:70px;cursor:pointer}.wrap{display:grid;width:min-content;grid-template-columns:repeat(3,1fr);gap:2px;-webkit-user-select:none;-ms-user-select:none;user-select:none}
