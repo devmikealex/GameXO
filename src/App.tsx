@@ -14,6 +14,11 @@ function App() {
         }
     }
 
+    function reset() {
+        setGame([0, 0, 0, 0, 0, 0, 0, 0, 0])
+        setUser(true)
+    }
+
     return (
         <>
             <h1>XO:Game</h1>
@@ -25,6 +30,9 @@ function App() {
                 })}
             </div>
             <h2>current user: {user ? 'X' : 'O'}</h2>
+            <button onClick={reset} style={{ display: 'block', margin: '0 auto' }}>
+                Reset
+            </button>
         </>
     )
 }

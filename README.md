@@ -1,4 +1,4 @@
-# Игра Крестики-Нолики
+# Игра Крестики-Нолики / **React**
 
 ## [Demo](https://devmikealex.github.io/GameXO/dist/)
 
