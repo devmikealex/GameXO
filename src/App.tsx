@@ -4,7 +4,7 @@ type CellState = '' | 'X' | 'O'
 
 const initState: CellState[] = Array(9).fill('')
 
-const userToString = (user: boolean): CellState => user ? 'X' : 'O'
+const userToString = (user: boolean): CellState => (user ? 'X' : 'O')
 
 export default function App() {
     const [game, setGame] = useState<CellState[]>([...initState])
@@ -33,7 +33,9 @@ export default function App() {
                     )
                 })}
             </div>
-            <h2>current user:<span className='cur-user'>{userToString(user)}</span></h2>
+            <h2>
+                current user:<span className='cur-user'>{userToString(user)}</span>
+            </h2>
             <button onClick={reset} style={{ display: 'block', margin: '0 auto' }}>
                 Reset
             </button>
@@ -48,7 +50,6 @@ function Cell({
     state: CellState
     funcSetState: React.MouseEventHandler
 }) {
-
     return (
         <div className='cell' onClick={funcSetState}>
             {state}

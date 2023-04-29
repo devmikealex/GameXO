@@ -55,7 +55,7 @@ button {
     text-transform: uppercase;
 }
 
-.cur-user{
+.cur-user {
     display: inline-block;
     width: 35px;
     color: green;
