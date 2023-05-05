@@ -27,12 +27,6 @@ h2 {
     cursor: pointer;
 }
 
-@media (hover: hover) {
-    .cell:hover {
-        background-color: rgb(247, 211, 211);
-    }
-}
-
 .wrap {
     display: grid;
     width: min-content;
@@ -59,5 +53,24 @@ button {
     display: inline-block;
     width: 35px;
     color: green;
+}
 
+.wincolor {
+    /* .wincolor, .wincolor.cell:hover { */
+    background-color: rgb(179, 244, 179);
+    pointer-events: none;
+}
+
+.no-hover {
+    pointer-events: none;
+}
+
+@media (hover: hover) {
+    .cell:hover {
+        background-color: rgb(247, 211, 211);
+    }
+
+    button:hover {
+        background-color: rgb(199, 25, 25);
+    }
 }
